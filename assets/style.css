@@ -1,0 +1,393 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1e3932;
+    background-color: #ffffff;
+    line-height: 1.5;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+/* =========================NAVBAR========================= */
+.navbar {
+    height: 90px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    border-bottom: 1px solid #eeeeee;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.navbar-left {
+    display: flex;
+    align-items: center;
+    gap: 42px;
+}
+.logo img {
+    width: 52px;
+    height: 52px;
+    display: block;
+}
+.main-nav {
+    display: flex;
+    gap: 32px;
+}
+.main-nav a {
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 0.4px;
+}
+.main-nav a:hover {
+    color: #00754a;
+}
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.store {
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+.store:hover {
+    color: #00754a;
+}
+/* =========================BUTTON========================= */
+.button {
+    display: inline-block;
+    padding: 10px 21px;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: bold;
+    border: 1px solid transparent;
+}
+.button-green {
+    background-color: #00754a;
+    color: white;
+}
+.button-green:hover {
+    background-color: #005f3c;
+}
+.button-black {
+    background-color: #000000;
+    color: white;
+}
+.button-black:hover {
+    background-color: #333333;
+}
+.button-white {
+    color: white;
+    border-color: white;
+    background-color: transparent;
+}
+.button-white:hover {
+    background-color: white;
+    color: #006241;
+}
+.button-outline {
+    background-color: white;
+    border-color: #000000;
+    color: #000000;
+}
+.button-outline:hover {
+    background-color: #f2f2f2;
+}
+/* =========================MOBILE BUTTON========================= */
+.mobile-button {
+    display: none;
+    border: none;
+    background: none;
+    font-size: 25px;
+    cursor: pointer;
+}
+/* =========================HERO========================= */
+.hero {
+    width: 100%;
+    height: calc(100vh - 90px);
+    min-height: 560px;
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.22),
+            rgba(0, 0, 0, 0.22)
+        ),
+        url("image/hero.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+.hero-content {
+    width: 90%;
+    max-width: 760px;
+}
+.hero-content h1 {
+    font-size: 64px;
+    line-height: 1.05;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.hero-content p {
+    font-size: 19px;
+    margin-bottom: 30px;
+}
+/* =========================PROMOTION========================= */
+.promo {
+    width: 100%;
+    min-height: 520px;
+    display: flex;
+}
+.promo-reverse {
+    flex-direction: row-reverse;
+}
+.promo-image {
+    width: 50%;
+    overflow: hidden;
+}
+.promo-image img {
+    width: 100%;
+    height: 100%;
+    min-height: 520px;
+    object-fit: cover;
+    display: block;
+}
+.promo-content {
+    width: 50%;
+    min-height: 520px;
+    padding: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #f7f7f7;
+}
+.promo-content h2 {
+    font-size: 42px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+.promo-content p {
+    font-size: 17px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+    color: #333333;
+}
+.promo-green {
+    background-color: #006241;
+    color: white;
+}
+.promo-green p {
+    color: white;
+}
+/* =========================REWARDS========================= */
+.rewards {
+    min-height: 400px;
+    background-color: #d4e9e2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 60px 20px;
+}
+.rewards-content {
+    max-width: 680px;
+}
+.rewards-content h2 {
+    font-size: 44px;
+    margin-bottom: 18px;
+}
+.rewards-content p {
+    font-size: 17px;
+    line-height: 1.7;
+    margin-bottom: 28px;
+}
+/* =========================GIFT CARDS========================= */
+.gift {
+    min-height: 330px;
+    background-color: #f7f7f7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 60px 20px;
+}
+.gift-content {
+    max-width: 650px;
+}
+.gift-content h2 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+.gift-content p {
+    font-size: 17px;
+    margin-bottom: 28px;
+}
+/* =========================FOOTER========================= */
+footer {
+    background-color: white;
+    border-top: 1px solid #dddddd;
+    padding: 55px 7% 30px;
+}
+.footer-container {
+    max-width: 1250px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 35px;
+}
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+.footer-column h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+.footer-column a {
+    color: #666666;
+    font-size: 14px;
+}
+.footer-column a:hover {
+    color: #00754a;
+}
+.footer-bottom {
+    max-width: 1250px;
+    margin: 50px auto 0;
+    padding-top: 25px;
+    border-top: 1px solid #dddddd;
+}
+.social-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-bottom: 20px;
+}
+.social-links a {
+    font-weight: bold;
+}
+.social-links a:hover {
+    color: #00754a;
+}
+.footer-note {
+    font-size: 13px;
+    color: #555555;
+    margin-bottom: 12px;
+}
+.copyright {
+    font-size: 13px;
+    color: #777777;
+}
+/* =========================TABLET========================= */
+@media (max-width: 950px) {
+    .navbar {
+        padding: 0 25px;
+    }
+    .navbar-left {
+        gap: 25px;
+    }
+    .main-nav {
+        gap: 20px;
+    }
+    .store {
+        display: none;
+    }
+    .hero-content h1 {
+        font-size: 52px;
+    }
+    .promo-content {
+        padding: 45px;
+    }
+    .promo-content h2 {
+        font-size: 34px;
+    }
+    .footer-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+/* =========================MOBILE========================= */
+@media (max-width: 650px) {
+    .navbar {
+        height: 70px;
+        padding: 0 20px;
+    }
+    .logo img {
+        width: 45px;
+        height: 45px;
+    }
+    .main-nav,
+    .navbar-right {
+        display: none;
+    }
+    .mobile-button {
+        display: block;
+    }
+    .hero {
+        height: 520px;
+        min-height: 520px;
+    }
+    .hero-content h1 {
+        font-size: 40px;
+    }
+    .hero-content p {
+        font-size: 16px;
+    }
+    .promo,
+    .promo-reverse {
+        flex-direction: column;
+    }
+    .promo-image,
+    .promo-content {
+        width: 100%;
+    }
+    .promo-image {
+        height: 350px;
+    }
+    .promo-image img {
+        height: 350px;
+        min-height: 350px;
+    }
+    .promo-content {
+        min-height: 390px;
+        padding: 45px 25px;
+    }
+    .promo-content h2 {
+        font-size: 31px;
+    }
+    .promo-content p {
+        font-size: 16px;
+    }
+    .rewards {
+        min-height: 350px;
+    }
+    .rewards-content h2 {
+        font-size: 34px;
+    }
+    .gift {
+        min-height: 300px;
+    }
+    .gift-content h2 {
+        font-size: 32px;
+    }
+    footer {
+        padding: 45px 25px 25px;
+    }
+    .footer-container {
+        grid-template-columns: 1fr;
+    }
+}
